@@ -2,11 +2,144 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi primera página</title>
+  <title>Mi Perfil</title>
+
+  <!-- Fuente cursiva y elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 100, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    main, footer {
+      padding: 20px;
+    }
+
+    section {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      font-size: 1.8em;
+    }
+
+    ul.checklist, ol.checklist {
+      padding-left: 20px;
+    }
+
+    ul.checklist li, ol.checklist li {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      background-color: rgba(0, 50, 0, 0.7);
+      border-top: 2px solid #fff;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
-  <h1>¡Hola mundo! 🌍</h1>
-  <p>Esta es mi primera página con GitHub Pages.</p>
-  <p>Aprendiendo a cargar mi primera pàgina en lìnea</p>
+  <header>
+    <h1>El camino que eligió Melina</h1>
+    <nav>
+      <ul>
+        <li><a href="#datos-personales">Datos personales</a></li>
+        <li><a href="#mis-preferencias">Mis preferencias</a></li>
+        <li><a href="#mis-fortalezas">Mis fortalezas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Soy profesional en Administración y Negocios Internacionales, comprometida con el servicio a los demás.</p>
+    </section>
+
+    <section id="datos-personales">
+      <h2>Nació en</h2>
+      <ol class="checklist">
+        <li>Madre de Dios, Puerto Maldonado</li>
+        <li>Un 28 de mayo de 1996</li>
+        <li>Actualmente con 29 años de edad</li>
+      </ol>
+    </section>
+
+    <section id="mis-preferencias">
+      <h2>Mis gustos y preferencias</h2>
+      <ul class="checklist">
+        <li>Plato favorito: Los platos típicos</li>
+        <li>Color favorito: Rojo</li>
+        <li>Clima preferido: Invierno</li>
+        <li>Música: Adoraciones instrumentales</li>
+        <li>Deporte favorito: Vóley y básquet</li>
+        <li>Hobbies: Pintar</li>
+      </ul>
+    </section>
+
+    <section id="mis-fortalezas">
+      <h2>Fortalezas</h2>
+      <ul class="checklist">
+        <li>Dominio de inglés intermedio</li>
+        <li>Lengua de señas básica</li>
+        <li>Quechua básico</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <ul class="checklist">
+      <li>Correo electrónico: melinadanielayp@gmail.com</li>
+      <li>Número de contacto: 950 229 985</li>
+      <li>Redes sociales: Melina Daniela Yancapallo Peña</li>    
+    </ul>
+    <p>¡Gracias por visitar mi página!</p>
+  </footer>
 </body>
 </html>
